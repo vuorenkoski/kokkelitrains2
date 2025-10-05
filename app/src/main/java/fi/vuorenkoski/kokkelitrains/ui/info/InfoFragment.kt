@@ -32,6 +32,7 @@ class InfoFragment : Fragment() {
         infoViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
+
         return root
     }
 

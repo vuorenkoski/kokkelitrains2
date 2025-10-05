@@ -11,7 +11,7 @@
 
     <string name="info_text">Kauklahden junien aikataulut</string>
     <string name="menu_info">Tietoja</string>
-    <string name="info_text2">13.7.2022\nlauri.vuorenkoski@helsinki.fi\n\nDatalähde:\nhttps://www.digitraffic.fi/rautatieliikenne/</string>
+    <string name="info_text2">4.10.2025\nver. 1.1, v-code 5\nlauri.vuorenkoski@helsinki.fi\n\nDatalähde:\nhttps://www.digitraffic.fi/rautatieliikenne/</string>
     <string name="text_destination_station">Määränpää:</string>
     <string name="text_departure_station">Lähtöasema:</string>
 
