@@ -8,4 +8,52 @@
 
     <string name="menu_home">Junat</string>
     <string name="menu_gallery">Info</string>
+
+    <string name="info_text">Kauklahden junien aikataulut</string>
+    <string name="menu_info">Tietoja</string>
+    <string name="info_text2">13.7.2022\nlauri.vuorenkoski@helsinki.fi\n\nDatalähde:\nhttps://www.digitraffic.fi/rautatieliikenne/</string>
+    <string name="text_destination_station">Määränpää:</string>
+    <string name="text_departure_station">Lähtöasema:</string>
+
+    <string-array name="stationsLong">
+        <item>Helsinki</item>
+        <item>Pasila</item>
+        <item>Ilmala</item>
+        <item>Huopalahti</item>
+        <item>Valimo</item>
+        <item>Pitäjänmäki</item>
+        <item>Mäkkylä</item>
+        <item>Leppävaara</item>
+        <item>Kilo</item>
+        <item>Kera</item>
+        <item>Kauniainen</item>
+        <item>Koivuhovi</item>
+        <item>Tuomarila</item>
+        <item>Espoo</item>
+        <item>Kauklahti</item>
+    </string-array>
+
+    <string-array name="stationsShort">
+        <item>HKI</item>
+        <item>PSL</item>
+        <item>HPL</item>
+        <item>VMO</item>
+        <item>PJM</item>
+        <item>LPV</item>
+        <item>KIL</item>
+        <item>KEA</item>
+        <item>KNI</item>
+        <item>KVH</item>
+        <item>TRL</item>
+        <item>EPO</item>
+        <item>KLH</item>
+    </string-array>
+    <string-array name="selectableStations">
+        <item>Kauklahti</item>
+        <item>Espoo</item>
+        <item>Leppävaara</item>
+        <item>Huopalahti</item>
+        <item>Pasila</item>
+        <item>Helsinki</item>
+    </string-array>
 </resources>
