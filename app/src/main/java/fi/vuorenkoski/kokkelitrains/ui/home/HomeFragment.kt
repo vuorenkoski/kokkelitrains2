@@ -46,6 +46,14 @@ class HomeFragment : Fragment() {
         setupSpinners()
     }
 
+    override fun onResume() {
+        super.onResume()
+        // This method is called every time the fragment is visible and active,
+        // including when the app is brought from the background.
+        // This is the perfect place to refresh your data.
+        fetchTrainData()
+    }
+
     private fun setupRecyclerView() {
         // Initialize with an empty list. The adapter will be updated later.
         trainAdapter = TrainAdapter(requireContext(), ArrayList())
