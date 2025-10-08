@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Kokkelitrains</string>
+    <string name="app_name">Kökkeli trains</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Kökkeli trains</string>
@@ -11,7 +11,7 @@
 
     <string name="info_text">Kauklahden junien aikataulut</string>
     <string name="menu_info">Tietoja</string>
-    <string name="info_text2">7.10.2025\nver. 1.1.1, v-code 6\nlauri.vuorenkoski@helsinki.fi\n\nDatalähde:\nhttps://www.digitraffic.fi/rautatieliikenne/</string>
+    <string name="info_text2">9.10.2025\nver. 1.1.2, v-code 6\nlauri.vuorenkoski@helsinki.fi\n\nDatalähde:\nhttps://www.digitraffic.fi/rautatieliikenne/</string>
     <string name="text_destination_station">Määränpää:</string>
     <string name="text_departure_station">Lähtöasema:</string>
 
