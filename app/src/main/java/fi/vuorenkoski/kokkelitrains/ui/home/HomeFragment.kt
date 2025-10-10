@@ -11,9 +11,8 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import fi.vuorenkoski.kokkelitrains.DataSearch
-import fi.vuorenkoski.kokkelitrains.R // Make sure this is your project's R, not android.R
+import fi.vuorenkoski.kokkelitrains.R
 import fi.vuorenkoski.kokkelitrains.Station
-import fi.vuorenkoski.kokkelitrains.Train
 import fi.vuorenkoski.kokkelitrains.TrainAdapter
 import fi.vuorenkoski.kokkelitrains.databinding.FragmentHomeBinding
 import kotlinx.coroutines.Dispatchers
@@ -22,11 +21,9 @@ import kotlinx.coroutines.withContext
 
 class HomeFragment : Fragment() {
 
-    // 1. Use a single, non-nullable binding property
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
 
-    // 2. Initialize the adapter once
     private lateinit var trainAdapter: TrainAdapter
 
     override fun onCreateView(
@@ -40,17 +37,12 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        // 3. Setup views here, using the binding object
         setupRecyclerView()
         setupSpinners()
     }
 
     override fun onResume() {
         super.onResume()
-        // This method is called every time the fragment is visible and active,
-        // including when the app is brought from the background.
-        // This is the perfect place to refresh your data.
         fetchTrainData()
     }
 
@@ -65,10 +57,8 @@ class HomeFragment : Fragment() {
     }
 
     private fun setupSpinners() {
-        // Use a single listener instance for both spinners
         val eventListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                // 4. Fetch data when a selection changes
                 fetchTrainData()
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {}
@@ -106,11 +96,9 @@ class HomeFragment : Fragment() {
             return
         }
 
-        // 5. Use coroutines to move network calls off the main thread
         lifecycleScope.launch {
             try {
-                // Show a loading indicator (optional but recommended)
-                // binding.progressBar.visibility = View.VISIBLE
+                binding.progressBar.visibility = View.VISIBLE
 
                 // Switch to a background thread for the network call
                 val trains = withContext(Dispatchers.IO) {
@@ -130,8 +118,7 @@ class HomeFragment : Fragment() {
                 // Clear the list on error
                 trainAdapter.updateData(emptyList())
             } finally {
-                // Hide loading indicator
-                // binding.progressBar.visibility = View.GONE
+                binding.progressBar.visibility = View.GONE
             }
         }
     }
